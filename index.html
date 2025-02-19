@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="code-editor-container">
+        <div class="code-editor html-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                <img src="html.png" alt="HTML icon" width="25">
+            <span>HTML</span>
+                </div>
+                <div class="right-head">
+<img class="copy copy1" src="copy.svg" alt="Copy HTML">
+                </div>
+            </div>
+            <label for="html-input" class="sr-only">HTML Input</label>
+            <textarea id="html-input" class="html-input" spellcheck="false" placeholder="Enter HTML code here"></textarea>
+        </div>
+        <div class="code-editor css-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                <img src="css.png" alt="CSS icon" width="30">
+            <span>CSS</span>
+                </div>
+                <div class="right-head">
+<img class="copy copy2" src="copy.svg" alt="Copy CSS">
+                </div>
+            </div>
+            <label for="css-input" class="sr-only">CSS Input</label>
+            <textarea id="css-input" class="css-input" spellcheck="false" placeholder="Enter CSS code here"></textarea>
+        </div>
+        <div class="code-editor js-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                <img src="js.png" alt="JavaScript icon" width="30">
+            <span>JS</span>
+                </div>
+                <div class="right-head">
+<img class="copy copy3" src="copy.svg" alt="Copy JavaScript">
+                </div>
+            </div>
+            <label for="js-input" class="sr-only">JavaScript Input</label>
+            <textarea id="js-input" class="js-input" spellcheck="false" placeholder="Enter JavaScript code here"></textarea>
+        </div>
+    </div>
+    <div class="output-container">
+        <div class="output-head">
+            <span>OUTPUT</span>
+            <img id="save" src="save.svg" alt="Save">
+            <img id="full" src="full.svg" alt="Full screen">
+        </div>
+        <iframe id="output" title="Output"></iframe>
+    </div>
+<script src="script.js"></script> 
+</body>
+</html>
+<!-- Remove the closing </html> tag as it's unpaired -->
